@@ -1,0 +1,18 @@
+{
+	"name": "bronze_circuits",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake78543_azure_blob_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "circuits"
+			}
+		},
+		"schema": {}
+	}
+}
