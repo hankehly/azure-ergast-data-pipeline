@@ -1462,7 +1462,69 @@
 									"type": "JsonWriteSettings"
 								}
 							},
-							"enableStaging": false
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"path": "[['season']"
+										},
+										"sink": {
+											"path": "season"
+										}
+									},
+									{
+										"source": {
+											"path": "[['round']"
+										},
+										"sink": {
+											"path": "round"
+										}
+									},
+									{
+										"source": {
+											"path": "[['url']"
+										},
+										"sink": {
+											"path": "url"
+										}
+									},
+									{
+										"source": {
+											"path": "[['raceName']"
+										},
+										"sink": {
+											"path": "name"
+										}
+									},
+									{
+										"source": {
+											"path": "[['Circuit']['circuitId']"
+										},
+										"sink": {
+											"path": "circuit_id"
+										}
+									},
+									{
+										"source": {
+											"path": "[['date']"
+										},
+										"sink": {
+											"path": "date"
+										}
+									},
+									{
+										"source": {
+											"path": "[['Results']"
+										},
+										"sink": {
+											"path": "results"
+										}
+									}
+								],
+								"collectionReference": "$['MRData']['RaceTable']['Races']"
+							}
 						},
 						"inputs": [
 							{
