@@ -177,42 +177,18 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['MRData']['xmlns']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['series']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['url']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['limit']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['offset']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['total']"
-								}
-							},
-							{
-								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['circuitId']"
+								},
+								"sink": {
+									"path": "circuitId"
 								}
 							},
 							{
 								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['url']"
+								},
+								"sink": {
+									"path": "url"
 								}
 							},
 							{
