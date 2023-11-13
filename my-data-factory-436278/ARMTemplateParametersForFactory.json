@@ -14,6 +14,9 @@
 		"workspace54378_appdb_service_connectionString": {
 			"value": ""
 		},
+		"datalake78543_azure_blob_storage_connectionString": {
+			"value": ""
+		},
 		"Ergast REST API_properties_typeProperties_url": {
 			"value": "https://ergast.com/api/f1/"
 		},

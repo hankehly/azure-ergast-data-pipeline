@@ -19,6 +19,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'workspace54378_appdb_service'"
 		},
+		"datalake78543_azure_blob_storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'datalake78543_azure_blob_storage'"
+		},
 		"Ergast REST API_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://ergast.com/api/f1/"
@@ -62,6 +66,9 @@
 					},
 					"workspace54378_appdb_service_connectionString": {
 						"value": "[parameters('workspace54378_appdb_service_connectionString')]"
+					},
+					"datalake78543_azure_blob_storage_connectionString": {
+						"value": "[parameters('datalake78543_azure_blob_storage_connectionString')]"
 					},
 					"Ergast REST API_properties_typeProperties_url": {
 						"value": "[parameters('Ergast REST API_properties_typeProperties_url')]"
