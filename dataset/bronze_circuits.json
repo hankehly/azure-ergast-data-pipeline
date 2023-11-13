@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "circuits"
+				"folderPath": "circuits",
+				"container": "bronze"
 			}
 		},
 		"schema": {}
