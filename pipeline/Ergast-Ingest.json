@@ -286,31 +286,41 @@
 							{
 								"source": {
 									"path": "['season']"
+								},
+								"sink": {
+									"path": "season"
 								}
 							},
 							{
 								"source": {
 									"path": "['round']"
+								},
+								"sink": {
+									"path": "round"
 								}
 							},
 							{
 								"source": {
 									"path": "['url']"
+								},
+								"sink": {
+									"path": "url"
 								}
 							},
 							{
 								"source": {
 									"path": "['raceName']"
+								},
+								"sink": {
+									"path": "name"
 								}
 							},
 							{
 								"source": {
 									"path": "['Circuit']['circuitId']"
-								}
-							},
-							{
-								"source": {
-									"path": "['Circuit']['circuitName']"
+								},
+								"sink": {
+									"path": "circuit_id"
 								}
 							},
 							{
@@ -338,7 +348,11 @@
 									"path": "['date']"
 								}
 							},
-							null
+							{
+								"source": {
+									"path": "['Results']"
+								}
+							}
 						],
 						"collectionReference": "$['MRData']['RaceTable']['Races']"
 					}
