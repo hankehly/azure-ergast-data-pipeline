@@ -1,0 +1,15 @@
+{
+	"name": "results",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ergast REST API",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "results.json?limit=1000&offset=1"
+		},
+		"schema": []
+	}
+}
