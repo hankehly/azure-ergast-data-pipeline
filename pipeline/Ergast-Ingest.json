@@ -325,32 +325,18 @@
 							},
 							{
 								"source": {
-									"path": "['Circuit']['Location']['lat']"
-								}
-							},
-							{
-								"source": {
-									"path": "['Circuit']['Location']['long']"
-								}
-							},
-							{
-								"source": {
-									"path": "['Circuit']['Location']['locality']"
-								}
-							},
-							{
-								"source": {
-									"path": "['Circuit']['Location']['country']"
-								}
-							},
-							{
-								"source": {
 									"path": "['date']"
+								},
+								"sink": {
+									"path": "date"
 								}
 							},
 							{
 								"source": {
 									"path": "['Results']"
+								},
+								"sink": {
+									"path": "results"
 								}
 							}
 						],
