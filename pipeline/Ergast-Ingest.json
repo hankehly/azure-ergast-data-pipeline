@@ -194,26 +194,41 @@
 							{
 								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['circuitName']"
+								},
+								"sink": {
+									"path": "circuitName"
 								}
 							},
 							{
 								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['lat']"
+								},
+								"sink": {
+									"path": "lat"
 								}
 							},
 							{
 								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['long']"
+								},
+								"sink": {
+									"path": "long"
 								}
 							},
 							{
 								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['locality']"
+								},
+								"sink": {
+									"path": "locality"
 								}
 							},
 							{
 								"source": {
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['country']"
+								},
+								"sink": {
+									"path": "country"
 								}
 							}
 						],
