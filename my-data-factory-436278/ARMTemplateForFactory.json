@@ -704,7 +704,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy Seasons",
+						"name": "seasons",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -750,6 +750,54 @@
 								"parameters": {}
 							}
 						]
+					},
+					{
+						"name": "drivers",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "0.12:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "RestSource",
+								"httpRequestTimeout": "00:01:40",
+								"requestInterval": "00.00:00:00.010",
+								"requestMethod": "GET",
+								"paginationRules": {
+									"QueryParameters.{offset}": "RANGE:0:10000:1000"
+								}
+							},
+							"sink": {
+								"type": "JsonSink",
+								"storeSettings": {
+									"type": "AzureBlobFSWriteSettings"
+								},
+								"formatSettings": {
+									"type": "JsonWriteSettings"
+								}
+							},
+							"enableStaging": false
+						},
+						"inputs": [
+							{
+								"referenceName": "drivers",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "Bronze",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
 					}
 				],
 				"policy": {
@@ -760,7 +808,8 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/Seasons')]",
-				"[concat(variables('factoryId'), '/datasets/Bronze')]"
+				"[concat(variables('factoryId'), '/datasets/Bronze')]",
+				"[concat(variables('factoryId'), '/datasets/drivers')]"
 			]
 		},
 		{
@@ -1278,6 +1327,26 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/datalake78543_service')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/drivers')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "Ergast REST API",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "RestResource",
+				"typeProperties": {
+					"relativeUrl": "drivers.json?limit=1000&offset={offset}"
+				},
+				"schema": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/Ergast REST API')]"
 			]
 		},
 		{
