@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Seasons",
+				"name": "seasons",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
