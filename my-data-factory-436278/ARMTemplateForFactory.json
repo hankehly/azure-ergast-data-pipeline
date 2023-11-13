@@ -882,7 +882,69 @@
 									"type": "JsonWriteSettings"
 								}
 							},
-							"enableStaging": false
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['circuitId']"
+										},
+										"sink": {
+											"path": "circuitId"
+										}
+									},
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['url']"
+										},
+										"sink": {
+											"path": "url"
+										}
+									},
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['circuitName']"
+										},
+										"sink": {
+											"path": "circuitName"
+										}
+									},
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['lat']"
+										},
+										"sink": {
+											"path": "lat"
+										}
+									},
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['long']"
+										},
+										"sink": {
+											"path": "long"
+										}
+									},
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['locality']"
+										},
+										"sink": {
+											"path": "locality"
+										}
+									},
+									{
+										"source": {
+											"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['country']"
+										},
+										"sink": {
+											"path": "country"
+										}
+									}
+								],
+								"collectionReference": ""
+							}
 						},
 						"inputs": [
 							{
