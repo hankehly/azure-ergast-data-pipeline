@@ -27,7 +27,7 @@
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "JsonWriteSettings"
@@ -43,7 +43,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Bronze",
+						"referenceName": "bronze_seasons",
 						"type": "DatasetReference"
 					}
 				]
@@ -73,7 +73,7 @@
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "JsonWriteSettings"
@@ -89,7 +89,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Bronze",
+						"referenceName": "bronze_drivers",
 						"type": "DatasetReference"
 					}
 				]
@@ -119,7 +119,7 @@
 					"sink": {
 						"type": "JsonSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobStorageWriteSettings"
 						},
 						"formatSettings": {
 							"type": "JsonWriteSettings"
@@ -135,7 +135,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Bronze",
+						"referenceName": "bronze_constructors",
 						"type": "DatasetReference"
 					}
 				]

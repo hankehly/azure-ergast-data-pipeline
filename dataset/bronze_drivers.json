@@ -1,0 +1,19 @@
+{
+	"name": "bronze_drivers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalake78543_azure_blob_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "drivers",
+				"container": "bronze"
+			}
+		},
+		"schema": {}
+	}
+}
