@@ -285,160 +285,191 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['season']"
+									"path": "['season']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['round']"
+									"path": "['round']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['url']"
+									"path": "['url']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['raceName']"
+									"path": "['raceName']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['circuitId']"
+									"path": "['Circuit']['circuitId']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['url']"
+									"path": "['Circuit']['url']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['circuitName']"
+									"path": "['Circuit']['circuitName']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['Location']['lat']"
+									"path": "['Circuit']['Location']['lat']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['Location']['long']"
+									"path": "['Circuit']['Location']['long']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['Location']['locality']"
+									"path": "['Circuit']['Location']['locality']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Circuit']['Location']['country']"
+									"path": "['Circuit']['Location']['country']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['date']"
+									"path": "['date']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['number']"
+									"path": "$['MRData']['xmlns']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['position']"
+									"path": "$['MRData']['series']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['positionText']"
+									"path": "$['MRData']['url']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['points']"
+									"path": "$['MRData']['limit']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Driver']['driverId']"
+									"path": "$['MRData']['offset']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Driver']['url']"
+									"path": "$['MRData']['total']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Driver']['givenName']"
+									"path": "['Results'][0]['number']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Driver']['familyName']"
+									"path": "['Results'][0]['position']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Driver']['dateOfBirth']"
+									"path": "['Results'][0]['positionText']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Driver']['nationality']"
+									"path": "['Results'][0]['points']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Constructor']['constructorId']"
+									"path": "['Results'][0]['Driver']['driverId']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Constructor']['url']"
+									"path": "['Results'][0]['Driver']['url']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Constructor']['name']"
+									"path": "['Results'][0]['Driver']['givenName']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Constructor']['nationality']"
+									"path": "['Results'][0]['Driver']['familyName']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['grid']"
+									"path": "['Results'][0]['Driver']['dateOfBirth']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['laps']"
+									"path": "['Results'][0]['Driver']['nationality']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['status']"
+									"path": "['Results'][0]['Constructor']['constructorId']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Time']['millis']"
+									"path": "['Results'][0]['Constructor']['url']"
 								}
 							},
 							{
 								"source": {
-									"path": "$['MRData']['RaceTable']['Races'][0]['Results'][0]['Time']['time']"
+									"path": "['Results'][0]['Constructor']['name']"
+								}
+							},
+							{
+								"source": {
+									"path": "['Results'][0]['Constructor']['nationality']"
+								}
+							},
+							{
+								"source": {
+									"path": "['Results'][0]['grid']"
+								}
+							},
+							{
+								"source": {
+									"path": "['Results'][0]['laps']"
+								}
+							},
+							{
+								"source": {
+									"path": "['Results'][0]['status']"
+								}
+							},
+							{
+								"source": {
+									"path": "['Results'][0]['Time']['millis']"
+								}
+							},
+							{
+								"source": {
+									"path": "['Results'][0]['Time']['time']"
 								}
 							}
-						]
+						],
+						"collectionReference": "$['MRData']['RaceTable']['Races']"
 					}
 				},
 				"inputs": [
