@@ -1,0 +1,12 @@
+{
+	"name": "constructors",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ergast REST API",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
