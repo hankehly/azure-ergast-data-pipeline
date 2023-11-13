@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "my-data-factory-436278"
 		},
+		"datalake78543_azure_blob_storage_connectionString": {
+			"value": ""
+		},
 		"datalake78543_service_accountKey": {
 			"value": ""
 		},
@@ -12,9 +15,6 @@
 			"value": ""
 		},
 		"workspace54378_appdb_service_connectionString": {
-			"value": ""
-		},
-		"datalake78543_azure_blob_storage_connectionString": {
 			"value": ""
 		},
 		"Ergast REST API_properties_typeProperties_url": {

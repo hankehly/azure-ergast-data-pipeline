@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "my-data-factory-436278"
 		},
+		"datalake78543_azure_blob_storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'datalake78543_azure_blob_storage'"
+		},
 		"datalake78543_service_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'datalake78543_service'"
@@ -18,10 +22,6 @@
 		"workspace54378_appdb_service_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'workspace54378_appdb_service'"
-		},
-		"datalake78543_azure_blob_storage_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'datalake78543_azure_blob_storage'"
 		},
 		"Ergast REST API_properties_typeProperties_url": {
 			"type": "string",
@@ -58,6 +58,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"datalake78543_azure_blob_storage_connectionString": {
+						"value": "[parameters('datalake78543_azure_blob_storage_connectionString')]"
+					},
 					"datalake78543_service_accountKey": {
 						"value": "[parameters('datalake78543_service_accountKey')]"
 					},
@@ -66,9 +69,6 @@
 					},
 					"workspace54378_appdb_service_connectionString": {
 						"value": "[parameters('workspace54378_appdb_service_connectionString')]"
-					},
-					"datalake78543_azure_blob_storage_connectionString": {
-						"value": "[parameters('datalake78543_azure_blob_storage_connectionString')]"
 					},
 					"Ergast REST API_properties_typeProperties_url": {
 						"value": "[parameters('Ergast REST API_properties_typeProperties_url')]"
