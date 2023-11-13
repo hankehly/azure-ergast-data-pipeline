@@ -240,7 +240,8 @@
 									"path": "$['MRData']['CircuitTable']['Circuits'][0]['Location']['country']"
 								}
 							}
-						]
+						],
+						"collectionReference": ""
 					}
 				},
 				"inputs": [
