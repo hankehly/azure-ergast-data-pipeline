@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "my-data-factory-436278"
+		},
+		"datalake78543_service_accountKey": {
+			"value": ""
+		},
+		"sampleappdb_connectionString": {
+			"value": ""
+		},
+		"workspace54378_appdb_service_connectionString": {
+			"value": ""
+		},
+		"Ergast REST API_properties_typeProperties_url": {
+			"value": "https://ergast.com/api/f1/"
+		},
+		"datalake78543_service_properties_typeProperties_url": {
+			"value": "https://datalake78543.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
