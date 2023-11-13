@@ -337,11 +337,6 @@
 								"source": {
 									"path": "['date']"
 								}
-							},
-							{
-								"source": {
-									"path": "['Results']"
-								}
 							}
 						],
 						"collectionReference": "$['MRData']['RaceTable']['Races']"
