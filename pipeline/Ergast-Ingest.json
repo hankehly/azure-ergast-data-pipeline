@@ -337,7 +337,8 @@
 								"source": {
 									"path": "['date']"
 								}
-							}
+							},
+							null
 						],
 						"collectionReference": "$['MRData']['RaceTable']['Races']"
 					}
