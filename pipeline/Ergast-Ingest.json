@@ -310,11 +310,6 @@
 							},
 							{
 								"source": {
-									"path": "['Circuit']['url']"
-								}
-							},
-							{
-								"source": {
 									"path": "['Circuit']['circuitName']"
 								}
 							},
@@ -341,36 +336,6 @@
 							{
 								"source": {
 									"path": "['date']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['xmlns']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['series']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['url']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['limit']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['offset']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['MRData']['total']"
 								}
 							},
 							{
